@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="payment-tests" parallel="tests"	verbose="1" thread-count="5" preserve-order="true">
+	
+	<parameter name="username" value="orina.moorthy@dcis.net" />
+	<parameter name="password" value="123456" />
+	<parameter name="sitename" value="AIC"/>
+	<parameter name="siteurl" value="https://www.us-immigration.com" />
+	<test name="Payment" allow-return-values="true">
+		<parameter name="product" value="i90" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+</suite>

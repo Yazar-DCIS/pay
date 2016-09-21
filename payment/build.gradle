@@ -1,0 +1,17 @@
+dependencies{
+    testCompile("com.formsdirectinc.qa:qa-base:$version:tests"){
+        exclude group: "org.testng", module: "testng"
+    }
+    
+}
+test{
+    useTestNG()
+            {
+                options.suites("build/resources/test/payment/testsuites/${System.getProperty('suite.name')}.xml")
+                // To generate the TestNG customized reports,instead of default html-report
+                useDefaultListeners=true
+                reports.html.enabled = false
+                options.listeners << 'org.uncommons.reportng.HTMLReporter'
+                options.listeners << 'org.uncommons.reportng.JUnitXMLReporter'
+            }
+}

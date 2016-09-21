@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="all-product-payment-tests" parallel="tests"	verbose="1" thread-count="5" preserve-order="true">
+	<parameter name="sitename" value="AIC"/>
+	<parameter name="siteurl" value="https://www.us-immigration.com" />
+	<parameter name="username" value="orina.moorthy@dcis.net" />
+	<parameter name="password" value="123456" />
+	
+	<test name="i90-Payment" allow-return-values="true">
+		<parameter name="product" value="i90" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="n400-Payment" allow-return-values="true">
+		<parameter name="product" value="n400" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="i102-Payment" allow-return-values="true">
+		<parameter name="product" value="i102" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="i129f-Payment" allow-return-values="true">
+		<parameter name="product" value="i129f" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="i130-Payment" allow-return-values="true">
+		<parameter name="product" value="i130" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="i130i485-Payment" allow-return-values="true">
+		<parameter name="product" value="i130i485" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="i131-Payment" allow-return-values="true">
+		<parameter name="product" value="i131" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="i134-Payment" allow-return-values="true">
+		<parameter name="product" value="i134" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="i485Principal-Payment" allow-return-values="true">
+		<parameter name="product" value="i485" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="i485Benficiary-Payment" allow-return-values="true">
+		<parameter name="product" value="i485" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="i539-Payment" allow-return-values="true">
+		<parameter name="product" value="i539" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="i751-Payment" allow-return-values="true">
+		<parameter name="product" value="i751" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="i765-Payment" allow-return-values="true">
+		<parameter name="product" value="i765" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="i821-Payment" allow-return-values="true">
+		<parameter name="product" value="i821" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="i821d-Payment" allow-return-values="true">
+		<parameter name="product" value="i821d" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="i824-Payment" allow-return-values="true">
+		<parameter name="product" value="i824" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="n565-Payment" allow-return-values="true">
+		<parameter name="product" value="n565" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="n600-Payment" allow-return-values="true">
+		<parameter name="product" value="n600" />
+		<classes>
+			<class name="com.formsdirectinc.qa.app.payment.PaymentTest"></class>
+		</classes>
+	</test>
+</suite>
